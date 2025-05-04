@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <style>
+       /* Responsive body background colors */
+       body { background-color: #e0f7fa; } /* soft cyan */
+    @media (min-width: 576px) {
+      body { background: #ffe0b2; } /* soft peach */
+    }
+    @media (min-width: 768px) {
+      body { background: #fff9c4; } /* pale yellow */
+    }
+    @media (min-width: 992px) {
+      body { background: #c8e6c9; } /* soft green */
+    }
+    @media (min-width: 1200px) {
+      body { background: #d1c4e9; } /* soft lavender */
+    }
+    @media (min-width: 1400px) {
+      body { background: #b3e5fc; } /* soft blue */
+    }
+
+
+    /* Custom column backgrounds */
+    .col1 { background-color: #5C7080; color: #fff; }
+    .col2 { background-color: #6BC0FF; color: #222; }
+    .col3 { background-color: #E8AA4C; color: #222; }
+    .col4 { background-color: #FF384E; color: #fff; }
+    .row > div {
+      padding: 16px;
+      border: 1px solid #222;
+      text-align: left;
+    }
+
+
+    #pink {
+      background-color: pink;
+    }
+
+    #maroon {
+      background-color: rgb(201, 52, 52);
+    }
+  </style>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+  
+  <div class="container">
+    <h1 class="text-center">Responsive BreakPoints</h1>
+    <p><b>Please resize the window to see the different breakpoints.</b></p>
+  </div>
+
+  <!-- Responsive Containers Example -->
+  <div class="container">
+    <h1>Responsive Containers</h1>
+    <p><b>Resize the browser window to see the effect.</b></p>
+    <div class="container-sm border border-success my-2">.container-sm</div>
+    <div class="container-md mt-3 border border-warning">.container-md</div>
+    <div class="container-lg mt-3 border border-info">.container-lg</div>
+    <div class="container-xl mt-3 border border-dark">.container-xl</div>
+  </div>
+
+  <!-- Responsive 4-Column Grid -->
+  <div class="container my-4">
+    <!-- 1st Row -->
+    <div class="row mb-2">
+      <div class="col-12 col-sm-6 col1">
+        <h4><b>Column 1</b></h4>
+      </div>
+      <div class="col-12 col-sm-6 col2">
+        <h4>Column 2</h4>
+      </div>
+    </div>
+    <!-- 2nd Row -->
+    <div class="row">
+      <div class="col-12 col-sm-6 col3">
+        <h4>Column 3</h4>
+      </div>
+      <div class="col-12 col-sm-6 col4">
+        <h4>Column 4</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container Padding Example -->
+  <div class="container pt-3" id="pink">
+    <h1>Container Padding</h1>
+    <p>This container has a top padding of 16 pixels (.pt-3).</p>
+    <p>Try to remove the .pt-3 class to see the difference.</p>
+  </div>
+  <div class="container" id="maroon">
+    <h1>Container NO TOP Padding</h1>
+    <p>This container has NO top padding of 16 pixels (.pt-3).</p>
+    <p>See the difference.</p>
+  </div>
+
+  <!-- Border, Padding, Margin, and Background Utility Examples -->
+  <div class="container p-3 my-3 border border-dark">
+    <h1>Border, Padding and Margins</h1>
+    <p>This container has a border and some extra padding and margins.</p>
+  </div>
+  <div class="container p-3 my-3 bg-dark text-white">
+    <h1>Dark Header</h1>
+    <p>This container has a dark background color and a white text, and some extra padding and margins.</p>
+  </div>
+  <div class="container p-3 my-3 bg-primary text-white">
+    <h1>Blue Header</h1>
+    <p>This container has a blue background color and a white text, and some extra padding and margins.</p>
+  </div>
+
+
+
+  <div class="text-center my-4">
+    <a href="scaffolding.html" class="btn btn-danger btn-lg px-4 py-2" style="border-radius: 50px; font-weight: 500;">
+      Scaffolding Example
+    </a>
+  </div>
+
+</nav>
+</body>
+</html>
